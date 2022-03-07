@@ -1,0 +1,18 @@
+/*  1. body에 배경색 dodgerblue로 지정
+            2. h1태그 글자색 흰색
+            3. li태그에 글자색 노란색, 점선테두리 3px두께 */
+
+body{
+    margin: 0;
+}
+h1 {
+    color: white;
+    background-color: purple;
+    border: 20px solid salmon;
+    margin-top: 0;
+}
+li {
+    color: rgb(25, 0, 255);
+    border: 3px dotted salmon;
+    font-size: 30px;
+}
