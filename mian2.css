@@ -1,0 +1,13 @@
+/*1. 제목에 글자색 지정, 크기30px, 배경색 지정
+  2. 목록에 테두리 3px groove 색상 지정, 글자색 지정, 밑줄*/
+
+h1 {
+    color: red;
+    font-size: 30px;
+    background-color: gray;
+}
+li {
+    border: 3px groove dodgerblue;
+    color: green;
+    text-decoration: underline;
+}
