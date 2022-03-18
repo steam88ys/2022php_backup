@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>h2 {
+            font-size: 20px;
+            color: brown;
+            border: 10px solid salmon;
+            background-color: bisque;
+        }
+        div h2 {
+            font-size: 50px;
+            background-color: deeppink;
+        }
+        h1+h2 {
+            border: 10px solid black;
+            background-color: chartreuse;
+        }
+        h1~h2 {
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div>          <!--DOM 구조 (Document Object Model)-->
+        <h1>선택자의 종류</h1>
+        <h2>자손선택자</h2>
+        <h2>자손선택자</h2>
+        <nav>
+            <h2>선택자 확인</h2>
+        </nav>
+        <h2>HTML</h2>
+        <h2>CSS3</h2>
+    </div>
+    <ul>
+        <li>자손선택자</li>
+        <li>자식선택자</li>
+        <li>형제선택자</li>
+    </ul>
+</body>
+</html>
