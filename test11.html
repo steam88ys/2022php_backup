@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: green;
+        }
+        /* 모바일 일때 */
+        @media screen and (max-width: 767px) {
+	        body{background:dodgerblue;}
+        }
+
+        /* 태블릿 세로 */
+        @media screen and (min-width: 768px) and (max-width:991px) {
+	        body{background:red;}
+        }
+        /* 태블릿 가로 */
+        @media screen and (min-width: 992px) and (max-width:1023px) {
+	        body{background:yellow;}
+        }
+
+        /* 데스크탑 일떄 */
+        @media screen and (min-width: 1023px) {
+	        body{background:salmon;}
+        }
+    </style>
+</head>
+<body>
+    Media Query
+</body>
+</html>

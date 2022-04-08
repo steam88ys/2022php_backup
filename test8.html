@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.navi li {
+            display: inline;    /* 가로 정렬 */
+            border: 1px solid gray;
+        }
+        ul.navi :first-child {
+            border-top-left-radius: 1em;
+            border-bottom-left-radius: 1em;
+        }
+        ul.navi :last-child {
+            border-top-right-radius: 1em;
+            border-bottom-right-radius: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>first-child, last child</h1>
+    <ul class="navi">
+        <li>Home</li>
+        <li>Login</li>
+        <li>Join</li>
+        <li>Logout</li>
+    </ul>
+</body>
+</html>

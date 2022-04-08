@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width: 767px) {
+            body{
+                background: url(../img/bg0.jpg) no-repeat fixed;    /* 사진 반복 x, 사진 위치 고정 */
+                background-size: cover;                             /* 지정한 요소를 다 덮도록 배경이미지를 확대/축소 */
+            }
+        }
+        
+        @media screen and (min-width: 768px) and (max-width:991px) {
+	        body{
+                background: url(../img/bg1.jpg) no-repeat fixed;
+                background-size: cover;
+            }
+        }
+        @media screen and (min-width: 992px) and (max-width:1023px) {
+            body{
+                background: url(../img/bg2.jpg) no-repeat fixed;
+                background-size: cover;
+            }
+        }
+
+        @media screen and (min-width: 1023px) {
+            body{
+                background: url(../img/bg3.JPG) no-repeat fixed;
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
