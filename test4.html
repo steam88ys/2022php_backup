@@ -5,59 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            margin: 0px;
-        }
-        #wrap {
-            width: 1000px;
-            height: 800px;
-        }
-        #header {
-            width: 1000px;
-            height: 100px;
-            background-color: yellow;
-            font-size: 30px;
-        }
-        #nav {
-            float: left;
-            width: 240px;
-            height: 600px;
-            background-color: aquamarine;
-            font-size: 30px;
-        }
-        #main {
-            float: left;
-            width: 500px;
-            height: 600px;
-            background-color: yellowgreen;
-            font-size: 30px;
-        }
-        #aside {
-            width: 260px;
-            height: 600px;
-            display: inline-block;  /* block모델 옆으로 배치 */
-            background-color: sandybrown;
-            font-size: 30px;
-        }
-        /* clear:both -> left 정렬 해제 */
-        #footer {
-            width: 1000px;
-            height: 100px;
-            background-color: cadetblue;
-            font-size: 30px;
-        }
-    </style>
 </head>
 <body>
-    <div id="wrap">
-        <div id="header">Header</div>
-        <div id="nav">Nav</div>
-        <div id="main">Main</div>
-        <div id="aside">Aside</div>
-        <div id="footer">Footer</div>
-    </div>
-    
+    <h1>좋아하는 과일을 선택하세요</h1>
+    <form method="post" action="test4_1.php">
+        <input type="checkbox" name="fruit[]" value="apple">Apple<br>
+        <input type="checkbox" name="fruit[]" value="banana">Banana<br>
+        <input type="checkbox" name="fruit[]" value="mango">Mango<br>
+        <input type="checkbox" name="fruit[]" value="melon">Melon<br>
+        <hr>
+        <h1>성별을 선택하세요</h1>
+        <input type="radio" name="gender" value="man">남자
+        <input type="radio" name="gender" value="woman">여자
+        <hr>
+        <h1>선택하세요</h1>
+        <select name="sel">
+            <option value="서울">서울</option>
+            <option value="부산">부산</option>
+            <option value="인천">인천</option>
+            <option value="대구">대구</option>
+            <option value="제주">제주</option>
+        </select>
 
+        <button type="submit">확인</button>
+    </form>
 </body>
 </html>
