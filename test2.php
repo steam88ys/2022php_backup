@@ -1,12 +1,16 @@
 <?php
-    $Jaksum=0;
-    $Holsum=0;
+$id = $_POST['id'];
+$pass = $_POST['pass'];
+$repass = $_POST['repass'];
+$name = $_POST['name'];
+$content = $_POST['content'];
 
-    for($i=0; $i<5; $i++) {
-        if((i+1)%2==0) $Jaksum+=$i;
-        else $Holsum+=$i;
-    }
+if($pass == $repass) {
+    echo "아이디: ".$id."<br>비밀번호: ".$pass."<br>이름: ".$name."<br>자기소개: ".$content;
+}
+else {
+    echo "aa";
+    echo "<script type='javascript'>alert('not equal');history.go(-1);>";
+}
 
-    echo "짝수의 합 = ".$Jaksum;
-    echo "<br>홀수의 합 = ".$Holsum;
 ?>
