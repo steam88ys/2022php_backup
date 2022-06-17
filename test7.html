@@ -3,49 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        /* a[href] {
-            background: salmon;
-        }
-        a[target="_blank"] {
-            padding-right: 30px;
-            background: dodgerblue;
-        } */
-        li{
-            list-style: none;
-        }
-        a{
-            font-size: 10px;
-        }
-        a:link {
-	        text-decoration: none;
-            color: #333;
-        }
-        a:visited {
-	        text-decoration: none;
-            color: #333;
-            font-size: 10px;
-        }
-        a:hover {
-	        text-decoration: underline;
-            color: red;
-        }
-        a:active {
-	        text-decoration: underline;
-            color: green;
-            font-size: 50px;
-        }       
-    </style>
 </head>
 <body>
-    <h1>메뉴모음</h1>
-    <ul>
-        <li><a>Home</a></li>
-        <li><a href="#" target="_blank">Blog</a></li>
-        <li><a href="#">Skill</a></li>
-        <li><a href="#">Job</a></li>
-    </ul>
+    <h1>파일업로드</h1>
+    <form method="post" action="test7_1.php" enctype="multipart/form-data">
+        업로드할 파일<input type="file" name="userfile"/>
+        <button type="submit">파일업로드</button>
+    </form>
 </body>
 </html>
